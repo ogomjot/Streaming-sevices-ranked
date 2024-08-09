@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #000;
+    }
+.box-wrapper {
+    background-color: #000; 
+    padding: 10px; 
+    border-radius: 15px;
+}
+.box {
+    border: 2px solid #000; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: inline-block; 
+    background-color: #fff; 
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+input[type="submit"]
+{
+    font-size:30px;
+}
+.button{
+    color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border-color: #000;
+    transition: transform 0.3s, background-color 0.3s,color 0.3s;
+}
+.button:hover{
+    transform: translate(0px,-10px);
+    background-color: #000;
+}
+@keyframes MOVE{
+    from{
+        transform: translateX(-3000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.OGOM{
+    animation: MOVE 2s ease-in 0.5s 1 normal;
+}
