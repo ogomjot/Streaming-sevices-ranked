@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Streaming Services Ranked</title>
+<meta name="description" content="Curated rankings of movie, TV, and music streaming platforms, with live trending titles pulled from TMDB.">
+<meta property="og:title" content="Streaming Services Ranked">
+<meta property="og:description" content="Curated rankings of movie, TV, and music streaming platforms, with live trending titles.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000'/%3E%3Ccircle cx='30' cy='50' r='8' fill='%23fff'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23fff'/%3E%3Ccircle cx='70' cy='50' r='8' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Firebase (free tier) — used for real login/signup -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="firebase-config.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#mainContent" class="skip-link">Skip to content</a>
+
+  <!-- Toast notifications -->
+  <div id="toastHost" class="toast-host" aria-live="polite"></div>
+
+  <!-- ===== AUTH GATE (first screen) ===== -->
+  <div id="authGate" class="auth-gate">
+    <div class="auth-gate-card">
+      <div class="gate-dots" aria-hidden="true"></div>
+      <h1 class="gate-logo">STREAMING<span>·</span>RANKED</h1>
+      <p class="gate-sub">Sign in to save your favorites. Or don't — browse as a guest.</p>
+
+      <div class="auth-tabs">
+        <button id="showLogin" class="auth-tab active">Log in</button>
+        <button id="showSignup" class="auth-tab">Sign up</button>
+      </div>
+      <form id="authForm">
+        <input type="email" id="authEmail" placeholder="Email" required autocomplete="email">
+        <div class="password-field">
+          <input type="password" id="authPassword" placeholder="Password (6+ characters)" required minlength="6" autocomplete="current-password">
+          <button type="button" id="togglePw" class="pw-toggle" aria-label="Show password">👁</button>
+        </div>
+        <button type="submit" class="btn-solid" id="authSubmitBtn">Log in</button>
+      </form>
+      <p id="authError" class="auth-error"></p>
+
+      <div class="gate-divider"><span>or</span></div>
+      <button id="guestBtn" class="btn-outline">Continue as Guest →</button>
+    </div>
+  </div>
+
+  <!-- ===== MAIN APP (hidden until unlocked) ===== -->
+  <div id="appRoot" hidden>
+
+    <div class="topbar">
+      <nav class="page-nav" aria-label="Pages">
+        <button class="page-link active" data-cat="home">Home</button>
+        <button class="page-link" data-cat="about">About</button>
+        <button class="page-link" data-cat="contact">Contact</button>
+      </nav>
+      <div class="account-area">
+        <span id="accountStatus">Guest</span>
+        <button id="openAuthBtn" class="account-btn">Log in / Sign up</button>
+        <button id="logoutBtn" class="account-btn" hidden>Log out</button>
+      </div>
+    </div>
+
+    <header class="marquee">
+      <h1 class="marquee-title">STREAMING SERVICES<span>RANKED</span></h1>
+    </header>
+
+    <nav class="tabs" role="tablist" aria-label="Category">
+      <button class="tab" data-cat="movies" role="tab" aria-selected="false">Movies</button>
+      <button class="tab" data-cat="tv" role="tab" aria-selected="false">TV Shows</button>
+      <button class="tab" data-cat="music" role="tab" aria-selected="false">Music</button>
+    </nav>
+
+    <main id="mainContent">
+
+    <section id="homeSection" class="page-section">
+      <div class="hero">
+        <h2 class="hero-title">Find where it's actually worth streaming.</h2>
+        <p class="hero-sub">Curated rankings of movie, TV, and music platforms — plus live trending titles pulled straight from TMDB.</p>
+        <div class="hero-actions">
+          <button class="btn-solid" data-goto="movies">Browse Movies</button>
+          <button class="btn-outline" data-goto="tv">Browse TV Shows</button>
+          <button class="btn-outline" data-goto="music">Browse Music</button>
+        </div>
+      </div>
+      <div class="home-grid">
+        <div class="home-card">
+          <h3>Ranked, not guessed</h3>
+          <p>Every service is scored on rating, best-use-case, and revenue — sourced and curated, not randomly ordered.</p>
+        </div>
+        <div class="home-card">
+          <h3>Live trending data</h3>
+          <p>The Movies and TV tabs pull real trending titles from TMDB, refreshed weekly.</p>
+        </div>
+        <div class="home-card">
+          <h3>Actually searchable</h3>
+          <p>Filter by app vs. website, sort by rating, star favorites, and search any service instantly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogSection" class="page-section" hidden>
+
+      <section class="controls">
+        <input type="text" id="searchInput" placeholder="Search a service… ( / )" aria-label="Search services">
+        <select id="typeFilter" aria-label="Filter by type">
+          <option value="all">All types</option>
+          <option value="App">Apps</option>
+          <option value="Website">Websites</option>
+        </select>
+        <select id="sortBy" aria-label="Sort by">
+          <option value="rank">Sort: Default</option>
+          <option value="rating">Sort: Rating (high→low)</option>
+          <option value="name">Sort: Name (A→Z)</option>
+        </select>
+        <button id="favToggleBtn" class="btn-outline small" aria-pressed="false">☆ Favorites only</button>
+      </section>
+
+      <section id="trendingPanel" class="trending">
+        <div class="trending-head">
+          <h2>Trending now <span class="live-dot" id="liveDot"></span></h2>
+          <div class="tmdb-key-box">
+            <input type="password" id="tmdbKey" placeholder="Paste free TMDB API key…" aria-label="TMDB API key">
+            <button id="saveKeyBtn" class="btn-solid small">Save</button>
+            <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener">Get a free key ↗</a>
+          </div>
+        </div>
+        <p id="trendingStatus" class="trending-status">Add your free TMDB API key above to load live trending titles, or run <code>fetch_data.py</code> to cache them offline.</p>
+        <div id="trendingGrid" class="trending-grid"></div>
+      </section>
+
+      <section class="table-wrap">
+        <table id="rankTable">
+          <thead id="rankTableHead"></thead>
+          <tbody id="rankTableBody"></tbody>
+        </table>
+        <p id="noResults" class="no-results" hidden>No services match your search.</p>
+      </section>
+
+    </section>
+
+    <section id="aboutSection" class="page-section" hidden>
+      <div class="prose">
+        <h2>About this project</h2>
+        <p>Streaming Services Ranked is a personal project built to compare movie, TV, and music streaming platforms in one place, and to explore working with real APIs and authentication.</p>
+        <p>It started as a static HTML/CSS page listing a fixed set of services, and has since been upgraded to include live trending data (via TMDB), search and filtering, favoriting, and account sign-in (via Firebase).</p>
+        <p>Built and maintained by <strong>Agamjot Singh</strong>, an incoming B.Tech Computer Science student at GTBIT, New Delhi — as a hands-on way to learn front-end development, APIs, and deployment.</p>
+      </div>
+    </section>
+
+    <section id="contactSection" class="page-section" hidden>
+      <div class="prose">
+        <h2>Contact</h2>
+        <p>Questions, bug reports, or suggestions — send a message below. This opens your email app with the message pre-filled; nothing is stored on a server.</p>
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="contactName" placeholder="Your name" required>
+          <input type="email" id="contactEmail" placeholder="Your email" required>
+          <textarea id="contactMessage" rows="5" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn-solid">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    </main>
+
+    <div id="detailModal" class="modal" hidden>
+      <div class="modal-card">
+        <button id="closeModal" class="modal-close" aria-label="Close">&times;</button>
+        <h2 id="modalTitle"></h2>
+        <p id="modalBody"></p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      Data: curated rankings (2023–2025) · Trending titles via <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDB</a> · Built by Agamjot Singh
+    </footer>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

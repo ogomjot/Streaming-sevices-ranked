@@ -1,0 +1,477 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "id": 125988,
+      "name": "Silo",
+      "original_name": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster_path": "/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        10765,
+        18
+      ],
+      "popularity": 223.0413,
+      "first_air_date": "2023-05-04",
+      "softcore": false,
+      "vote_average": 8.2,
+      "vote_count": 2306,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
+      "id": 279323,
+      "name": "The East Palace",
+      "original_name": "동궁",
+      "overview": "A man who walks the spirit world and a court lady who hears the dead enter the East Palace by the king's orders — can they unravel its dark secrets?",
+      "poster_path": "/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
+      "media_type": "tv",
+      "original_language": "ko",
+      "genre_ids": [
+        9648,
+        10759,
+        10765,
+        18
+      ],
+      "popularity": 104.9522,
+      "first_air_date": "2026-07-17",
+      "softcore": false,
+      "vote_average": 7.947,
+      "vote_count": 38,
+      "origin_country": [
+        "KR"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2ngdvUiEKW8Q37ta8BBdydE2cuq.jpg",
+      "id": 287620,
+      "name": "Stuart Fails to Save the Universe",
+      "original_name": "Stuart Fails to Save the Universe",
+      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
+      "poster_path": "/iQbTbwmLX5Nh1nlH21YUJPWt3Zo.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        35,
+        10765
+      ],
+      "popularity": 9.9706,
+      "first_air_date": "2026-07-23",
+      "softcore": false,
+      "vote_average": 8.667,
+      "vote_count": 3,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "id": 94997,
+      "name": "House of the Dragon",
+      "original_name": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster_path": "/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        10765,
+        18,
+        10759
+      ],
+      "popularity": 334.1077,
+      "first_air_date": "2022-08-21",
+      "softcore": false,
+      "vote_average": 8.373,
+      "vote_count": 6698,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
+      "id": 278624,
+      "name": "Lucky",
+      "original_name": "Lucky",
+      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+      "poster_path": "/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "popularity": 120.1684,
+      "first_air_date": "2026-07-14",
+      "softcore": false,
+      "vote_average": 7.064,
+      "vote_count": 78,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
+      "id": 215072,
+      "name": "A Shop for Killers",
+      "original_name": "킬러들의 쇼핑몰",
+      "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
+      "poster_path": "/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
+      "media_type": "tv",
+      "original_language": "ko",
+      "genre_ids": [
+        18,
+        10759,
+        9648
+      ],
+      "popularity": 74.6046,
+      "first_air_date": "2024-01-17",
+      "softcore": false,
+      "vote_average": 8.372,
+      "vote_count": 183,
+      "origin_country": [
+        "KR"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
+      "id": 281281,
+      "name": "Elite Force",
+      "original_name": "GIGN",
+      "overview": "After an unprecedented attack on his unit, a high-ranking officer set to leave the field leads a perilous mission that forces him to confront his past.",
+      "poster_path": "/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
+      "media_type": "tv",
+      "original_language": "fr",
+      "genre_ids": [
+        10759,
+        80,
+        18
+      ],
+      "popularity": 63.8394,
+      "first_air_date": "2026-07-22",
+      "softcore": false,
+      "vote_average": 7.167,
+      "vote_count": 15,
+      "origin_country": [
+        "FR"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "id": 37854,
+      "name": "One Piece",
+      "original_name": "ワンピース",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster_path": "/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "media_type": "tv",
+      "original_language": "ja",
+      "genre_ids": [
+        10759,
+        35,
+        16
+      ],
+      "popularity": 46.7437,
+      "first_air_date": "1999-10-20",
+      "softcore": false,
+      "vote_average": 8.7,
+      "vote_count": 5433,
+      "origin_country": [
+        "JP"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "id": 296206,
+      "name": "Agent Kim Reactivated",
+      "original_name": "김부장",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster_path": "/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+      "media_type": "tv",
+      "original_language": "ko",
+      "genre_ids": [
+        10759,
+        80,
+        18
+      ],
+      "popularity": 130.8063,
+      "first_air_date": "2026-06-26",
+      "softcore": false,
+      "vote_average": 7.295,
+      "vote_count": 39,
+      "origin_country": [
+        "KR"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
+      "id": 103516,
+      "name": "Star Trek: Strange New Worlds",
+      "original_name": "Star Trek: Strange New Worlds",
+      "overview": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
+      "poster_path": "/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        10765,
+        18
+      ],
+      "popularity": 44.9934,
+      "first_air_date": "2022-05-05",
+      "softcore": false,
+      "vote_average": 7.939,
+      "vote_count": 780,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+      "id": 60625,
+      "name": "Rick and Morty",
+      "original_name": "Rick and Morty",
+      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "poster_path": "/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        16,
+        35,
+        10765,
+        10759
+      ],
+      "popularity": 201.4436,
+      "first_air_date": "2013-12-02",
+      "softcore": false,
+      "vote_average": 8.679,
+      "vote_count": 11148,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jwCXxvbLno5GrGDA9KvQ22uLziM.jpg",
+      "id": 241882,
+      "name": "Ride or Die",
+      "original_name": "Ride or Die",
+      "overview": "Best friends Debbie and Judith are forced on the run when Debbie discovers Judith isn't a forensic accountant, she's an international assassin! With a mysterious figure chasing them, and Debbie's husband involved in something deeply corrupt, it's a race against time and a road trip across Europe to untangle the truth and stay alive.",
+      "poster_path": "/uWqEnvpwa2U28QheMdUdEcr4U0M.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        10759
+      ],
+      "popularity": 55.4342,
+      "first_air_date": "2026-07-15",
+      "softcore": false,
+      "vote_average": 5.3,
+      "vote_count": 48,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rvMmQj3nMZbJmoW6QrzU0nq9Xky.jpg",
+      "id": 277439,
+      "name": "Cape Fear",
+      "original_name": "Cape Fear",
+      "overview": "When convicted murderer Max Cady is released from prison, he begins infiltrating the family of the married attorneys who helped put him behind bars.",
+      "poster_path": "/wlwyFRwz2GXFZzaeMjKKNhhjrKG.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "popularity": 44.9987,
+      "first_air_date": "2026-06-04",
+      "softcore": false,
+      "vote_average": 7.1,
+      "vote_count": 78,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fBVNJL85Q60njpKPD6YaLi6tEsX.jpg",
+      "id": 254528,
+      "name": "The Hawk",
+      "original_name": "The Hawk",
+      "overview": "On the back nine of his career, golf legend Lonnie \"The Hawk\" Hawkins chases one final major — and drags everyone he loves into the chaos.",
+      "poster_path": "/6XCbqv7t0rYE2U1jzjh52fBxczj.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        35
+      ],
+      "popularity": 40.0926,
+      "first_air_date": "2026-07-16",
+      "softcore": false,
+      "vote_average": 5.034,
+      "vote_count": 29,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/p9tpGftvG18M5y5wsBmPrQpVBsd.jpg",
+      "id": 298610,
+      "name": "Spooky in Love",
+      "original_name": "오싹한 연애",
+      "overview": "When a ghost-seeing heir and an ace prosecutor learn that a single touch makes them a strangely effective duo, they team up to crack unsolved murders.",
+      "poster_path": "/acVOH8Pr5LEZ7WKZCbzwNuHVr9x.jpg",
+      "media_type": "tv",
+      "original_language": "ko",
+      "genre_ids": [
+        35,
+        10765,
+        18
+      ],
+      "popularity": 39.7117,
+      "first_air_date": "2026-07-18",
+      "softcore": false,
+      "vote_average": 8.4,
+      "vote_count": 12,
+      "origin_country": [
+        "KR"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/29P64FqDp0UVa9oJsIl49PHn5tH.jpg",
+      "id": 240993,
+      "name": "Ransom Canyon",
+      "original_name": "Ransom Canyon",
+      "overview": "Passions run deep in a small Texas town, as three ranching dynasties fight for their land, their legacies and the people they love.",
+      "poster_path": "/vp6A0mthGwZmnowmLxqNPF0lVRN.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        18,
+        37
+      ],
+      "popularity": 27.9634,
+      "first_air_date": "2025-04-17",
+      "softcore": false,
+      "vote_average": 7.2,
+      "vote_count": 108,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bxhodfyAivcHoM4JPB6310aRgp5.jpg",
+      "id": 321564,
+      "name": "Star Wars: The Mandalorian and Grogu | A Special Look",
+      "original_name": "Star Wars: The Mandalorian and Grogu | A Special Look",
+      "overview": "Get ready for \"Star Wars: The Mandalorian and Grogu | A Special Look,\" only in theaters.",
+      "poster_path": "/2YI9C4Ynr952BQj0e9qe6V5P6p8.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        99
+      ],
+      "popularity": 7.0921,
+      "first_air_date": "2026-05-04",
+      "softcore": false,
+      "vote_average": 8.5,
+      "vote_count": 8,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4CSdS9p0AhLhxCo1hGuQINiE2Sa.jpg",
+      "id": 2122,
+      "name": "King of the Hill",
+      "original_name": "King of the Hill",
+      "overview": "Set in Texas, this animated series follows the life of propane salesman Hank Hill, who lives with his overly confident substitute Spanish teacher wife Peggy, wannabe comedian son Bobby, and naive niece Luanne. Hank has conservative views about God, family, and country, but his values and ethics are often challenged by the situations he, his family, and his beer-drinking neighbors/buddies find themselves in.",
+      "poster_path": "/e2xyMapmYgv4AuSoSDv9Y4pQlD6.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        16,
+        35,
+        10751
+      ],
+      "popularity": 110.0292,
+      "first_air_date": "1997-01-12",
+      "softcore": false,
+      "vote_average": 7.404,
+      "vote_count": 681,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+      "id": 94664,
+      "name": "Mushoku Tensei: Jobless Reincarnation",
+      "original_name": "無職転生 ～異世界行ったら本気だす～",
+      "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+      "poster_path": "/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+      "media_type": "tv",
+      "original_language": "ja",
+      "genre_ids": [
+        10759,
+        16,
+        10765
+      ],
+      "popularity": 159.4126,
+      "first_air_date": "2021-01-11",
+      "softcore": false,
+      "vote_average": 8.5,
+      "vote_count": 1608,
+      "origin_country": [
+        "JP"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
+      "id": 138502,
+      "name": "X-Men '97",
+      "original_name": "X-Men '97",
+      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+      "poster_path": "/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+      "media_type": "tv",
+      "original_language": "en",
+      "genre_ids": [
+        16,
+        10759,
+        10765
+      ],
+      "popularity": 76.4487,
+      "first_air_date": "2024-03-20",
+      "softcore": false,
+      "vote_average": 8.645,
+      "vote_count": 788,
+      "origin_country": [
+        "US"
+      ]
+    }
+  ],
+  "total_pages": 500,
+  "total_results": 10000
+}
