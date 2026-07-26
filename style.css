@@ -343,7 +343,7 @@ button:focus-visible, input:focus-visible, select:focus-visible{
 
 .trending-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
   gap:16px;
 }
 .trend-card{
@@ -379,6 +379,9 @@ tbody tr:last-child{ border-bottom:none; }
 tbody tr:hover{ background:var(--bg-raised); }
 tbody td{ padding:14px 16px; }
 td.name{ font-weight:600; }
+td.name a{ color:var(--text); text-decoration:none; }
+td.name a:hover{ text-decoration:underline; }
+td.name a:visited{ color:var(--text-dim); }
 td.rating{ font-family:var(--mono); color:var(--text-dim); }
 .type-pill{ font-family:var(--mono); font-size:10.5px; padding:3px 10px; border-radius:var(--radius-pill); background:var(--pill); color:var(--text-dim); }
 .no-results{ color:var(--text-dim); text-align:center; padding:30px 0; }
@@ -552,11 +555,13 @@ td.rating{ font-family:var(--mono); color:var(--text-dim); }
   .page-section{ padding:14px 16px 40px; }
   .controls{ flex-direction:column; }
   .controls input, .controls select, #favToggleBtn{ width:100%; }
+  #searchInput{ flex:none; }
   .hero-actions{ flex-direction:column; align-items:stretch; }
   .home-grid{ grid-template-columns:1fr; }
   .trending-head{ flex-direction:column; align-items:flex-start; }
   .tmdb-key-box{ width:100%; }
   .tmdb-key-box input{ flex:1; }
+  .trending-grid{ grid-template-columns:repeat(auto-fit, minmax(110px, 1fr)); }
   table{ font-size:12.5px; }
   thead th, tbody td{ padding:10px 8px; }
   .modal-card{ padding:22px; }

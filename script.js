@@ -4,42 +4,42 @@
 
 const DATA = {
   movies: [
-    { name: "Netflix",              type: "App",     bestFor: "Original Movies",                       rating: 4.5, revenue: "34.932 BILLION" },
-    { name: "Prime Video",          type: "App",     bestFor: "Popular Movies",                         rating: 4.0, revenue: "32.239 BILLION" },
-    { name: "Hulu",                 type: "App",     bestFor: "Movie Variety",                          rating: 4.0, revenue: "5.1 BILLION" },
-    { name: "Tubi",                 type: "App",     bestFor: "Free Movies",                            rating: 4.0, revenue: "3.21 BILLION" },
-    { name: "Peacock",              type: "App",     bestFor: "Affordable TV And Movie Streaming",      rating: 4.0, revenue: "3.3 BILLION" },
-    { name: "Disney+ Hotstar",      type: "Website",  bestFor: "Family Friendly Movies",                 rating: 4.1, revenue: "23.16 BILLION" },
-    { name: "Max",                  type: "Website",  bestFor: "WarnerMedia Movies",                     rating: 4.0, revenue: "4.362 BILLION" },
-    { name: "Kweli TV",             type: "Website",  bestFor: "International Films",                    rating: 3.9, revenue: "No clear information" },
-    { name: "Freevee",              type: "Website",  bestFor: "Free Popular Movies and Family Titles",  rating: 3.5, revenue: "5 BILLION" },
-    { name: "The Criterion Channel",type: "Website",  bestFor: "Classic Films",                          rating: 3.6, revenue: "20.9 MILLION" },
+    { name: "Netflix",              type: "App",     bestFor: "Original Movies",                       rating: 4.5, revenue: "34.932 BILLION", url: "https://www.netflix.com" },
+    { name: "Prime Video",          type: "App",     bestFor: "Popular Movies",                         rating: 4.0, revenue: "32.239 BILLION", url: "https://www.primevideo.com" },
+    { name: "Hulu",                 type: "App",     bestFor: "Movie Variety",                          rating: 4.0, revenue: "5.1 BILLION", url: "https://www.hulu.com" },
+    { name: "Tubi",                 type: "App",     bestFor: "Free Movies",                            rating: 4.0, revenue: "3.21 BILLION", url: "https://tubitv.com" },
+    { name: "Peacock",              type: "App",     bestFor: "Affordable TV And Movie Streaming",      rating: 4.0, revenue: "3.3 BILLION", url: "https://www.peacocktv.com" },
+    { name: "Disney+ Hotstar",      type: "Website",  bestFor: "Family Friendly Movies",                 rating: 4.1, revenue: "23.16 BILLION", url: "https://www.hotstar.com" },
+    { name: "Max",                  type: "Website",  bestFor: "WarnerMedia Movies",                     rating: 4.0, revenue: "4.362 BILLION", url: "https://www.max.com" },
+    { name: "Kweli TV",             type: "Website",  bestFor: "International Films",                    rating: 3.9, revenue: "No clear information", url: "https://www.kweli.tv" },
+    { name: "Freevee",              type: "Website",  bestFor: "Free Popular Movies and Family Titles",  rating: 3.5, revenue: "5 BILLION", url: "https://www.amazon.com/adlp/freevee" },
+    { name: "The Criterion Channel",type: "Website",  bestFor: "Classic Films",                          rating: 3.6, revenue: "20.9 MILLION", url: "https://www.criterionchannel.com" },
   ],
   tv: [
-    { name: "Netflix",              type: "App",     bestFor: "Original Movies",                       rating: 4.5, revenue: "34.932 BILLION" },
-    { name: "Prime Video",          type: "App",     bestFor: "Popular Movies",                         rating: 4.0, revenue: "32.239 BILLION" },
-    { name: "Disney+ Hotstar",      type: "App",     bestFor: "Family Friendly Movies",                 rating: 4.1, revenue: "23.16 BILLION" },
-    { name: "Max",                  type: "App",     bestFor: "WarnerMedia Movies",                     rating: 4.0, revenue: "4.362 BILLION" },
-    { name: "Hulu",                 type: "App",     bestFor: "Movie Variety",                          rating: 4.0, revenue: "5.1 BILLION" },
-    { name: "Pluto TV",             type: "Website",  bestFor: "Popular Movies",                         rating: 3.8, revenue: "3.4 BILLION" },
-    { name: "Tubi",                 type: "App",     bestFor: "Free Movies",                            rating: 4.0, revenue: "3.21 BILLION" },
-    { name: "Crackle TV",           type: "Website",  bestFor: "Original Programming",                   rating: 3.7, revenue: "35 MILLION" },
-    { name: "Peacock",              type: "App",     bestFor: "Affordable TV And Movie Streaming",      rating: 4.0, revenue: "3.3 BILLION" },
-    { name: "Apple TV+",            type: "App",     bestFor: "All Rounder",                            rating: 3.9, revenue: "2.2 BILLION" },
-    { name: "PopCornFlix",          type: "Website",  bestFor: "Content Provider",                        rating: 4.0, revenue: "3.21 BILLION" },
-    { name: "The Criterion Channel",type: "App",     bestFor: "Classic Films",                          rating: 3.6, revenue: "20.9 MILLION" },
+    { name: "Netflix",              type: "App",     bestFor: "Original Movies",                       rating: 4.5, revenue: "34.932 BILLION", url: "https://www.netflix.com" },
+    { name: "Prime Video",          type: "App",     bestFor: "Popular Movies",                         rating: 4.0, revenue: "32.239 BILLION", url: "https://www.primevideo.com" },
+    { name: "Disney+ Hotstar",      type: "App",     bestFor: "Family Friendly Movies",                 rating: 4.1, revenue: "23.16 BILLION", url: "https://www.hotstar.com" },
+    { name: "Max",                  type: "App",     bestFor: "WarnerMedia Movies",                     rating: 4.0, revenue: "4.362 BILLION", url: "https://www.max.com" },
+    { name: "Hulu",                 type: "App",     bestFor: "Movie Variety",                          rating: 4.0, revenue: "5.1 BILLION", url: "https://www.hulu.com" },
+    { name: "Pluto TV",             type: "Website",  bestFor: "Popular Movies",                         rating: 3.8, revenue: "3.4 BILLION", url: "https://pluto.tv" },
+    { name: "Tubi",                 type: "App",     bestFor: "Free Movies",                            rating: 4.0, revenue: "3.21 BILLION", url: "https://tubitv.com" },
+    { name: "Crackle TV",           type: "Website",  bestFor: "Original Programming",                   rating: 3.7, revenue: "35 MILLION", url: "https://www.crackle.com" },
+    { name: "Peacock",              type: "App",     bestFor: "Affordable TV And Movie Streaming",      rating: 4.0, revenue: "3.3 BILLION", url: "https://www.peacocktv.com" },
+    { name: "Apple TV+",            type: "App",     bestFor: "All Rounder",                            rating: 3.9, revenue: "2.2 BILLION", url: "https://tv.apple.com" },
+    { name: "PopCornFlix",          type: "Website",  bestFor: "Content Provider",                        rating: 4.0, revenue: "3.21 BILLION", url: "https://www.popcornflix.com" },
+    { name: "The Criterion Channel",type: "App",     bestFor: "Classic Films",                          rating: 3.6, revenue: "20.9 MILLION", url: "https://www.criterionchannel.com" },
   ],
   music: [
-    { name: "Spotify",               type: "App",     bestFor: "Sound Quality, $12/mo",                  rating: 5.0, revenue: "13.25 BILLION" },
-    { name: "Amazon Music Unlimited",type: "App",     bestFor: "Value, $5–13/mo",                        rating: 4.0, revenue: "n/a" },
-    { name: "Apple Music",           type: "App",     bestFor: "Ecosystem integration, $11/mo",          rating: 4.0, revenue: "n/a" },
-    { name: "YouTube Music",         type: "App",     bestFor: "Video + audio combo, $14/mo",            rating: 4.0, revenue: "n/a" },
-    { name: "Tidal",                 type: "App",     bestFor: "Hi-fi audio, $11/mo",                    rating: 3.5, revenue: "n/a" },
-    { name: "Soundcloud.com",        type: "Website",  bestFor: "Independent & underground artists",      rating: 4.2, revenue: "2.28 BILLION" },
-    { name: "Genius.com",            type: "Website",  bestFor: "Lyrics & annotations",                   rating: 3.8, revenue: "13.5 MILLION" },
-    { name: "NPR.com",               type: "Website",  bestFor: "Music journalism & Tiny Desk",           rating: 3.9, revenue: "3.09 BILLION" },
-    { name: "Ultimate-Guitar.com",   type: "Website",  bestFor: "Tabs & chords for musicians",            rating: 4.1, revenue: "16.8 MILLION" },
-    { name: "Letras.mus.br",         type: "Website",  bestFor: "Portuguese/Spanish lyrics",              rating: 3.5, revenue: "n/a" },
+    { name: "Spotify",               type: "App",     bestFor: "Sound Quality, $12/mo",                  rating: 5.0, revenue: "13.25 BILLION", url: "https://www.spotify.com" },
+    { name: "Amazon Music Unlimited",type: "App",     bestFor: "Value, $5–13/mo",                        rating: 4.0, revenue: "n/a", url: "https://music.amazon.com" },
+    { name: "Apple Music",           type: "App",     bestFor: "Ecosystem integration, $11/mo",          rating: 4.0, revenue: "n/a", url: "https://music.apple.com" },
+    { name: "YouTube Music",         type: "App",     bestFor: "Video + audio combo, $14/mo",            rating: 4.0, revenue: "n/a", url: "https://music.youtube.com" },
+    { name: "Tidal",                 type: "App",     bestFor: "Hi-fi audio, $11/mo",                    rating: 3.5, revenue: "n/a", url: "https://tidal.com" },
+    { name: "Soundcloud.com",        type: "Website",  bestFor: "Independent & underground artists",      rating: 4.2, revenue: "2.28 BILLION", url: "https://soundcloud.com" },
+    { name: "Genius.com",            type: "Website",  bestFor: "Lyrics & annotations",                   rating: 3.8, revenue: "13.5 MILLION", url: "https://genius.com" },
+    { name: "NPR.com",               type: "Website",  bestFor: "Music journalism & Tiny Desk",           rating: 3.9, revenue: "3.09 BILLION", url: "https://www.npr.org" },
+    { name: "Ultimate-Guitar.com",   type: "Website",  bestFor: "Tabs & chords for musicians",            rating: 4.1, revenue: "16.8 MILLION", url: "https://www.ultimate-guitar.com" },
+    { name: "Letras.mus.br",         type: "Website",  bestFor: "Portuguese/Spanish lyrics",              rating: 3.5, revenue: "n/a", url: "https://www.letras.mus.br" },
   ],
 };
 
@@ -194,7 +194,7 @@ function renderTable() {
     <tr data-name="${r.name}">
       <td><button class="fav-star ${favs.includes(r.name) ? "is-fav" : ""}" data-fav="${r.name}" aria-label="Toggle favorite">${favs.includes(r.name) ? "★" : "☆"}</button></td>
       <td>${i + 1}</td>
-      <td class="name">${r.name}</td>
+      <td class="name"><a href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a></td>
       <td><span class="type-pill">${r.type}</span></td>
       <td>${r.bestFor}</td>
       <td class="rating">${r.rating.toFixed(1)}</td>
@@ -203,7 +203,7 @@ function renderTable() {
 
   body.querySelectorAll("tr").forEach(tr => {
     tr.addEventListener("click", e => {
-      if (e.target.closest(".fav-star")) return;
+      if (e.target.closest(".fav-star") || e.target.closest("a")) return;
       openModal(tr.dataset.name);
     });
   });
