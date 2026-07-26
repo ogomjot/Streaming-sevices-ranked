@@ -278,13 +278,26 @@ async function loadTrending() {
   }
 }
 
+/* Escapes HTML special characters so untrusted API text (titles, overviews)
+   can never break out of attributes or inject markup/scripts. */
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function renderTrending(items, mediaType) {
   const grid = document.getElementById("trendingGrid");
   grid.innerHTML = items.map(item => {
-    const title = item.title || item.name || "Untitled";
+    const rawTitle = item.title || item.name || "Untitled";
+    const title = escapeHtml(rawTitle);
+    const overview = escapeHtml(item.overview || "");
     const poster = item.poster_path ? TMDB_IMG + item.poster_path : "";
     return `
-      <div class="trend-card" data-title="${title.replace(/"/g, '&quot;')}" data-overview="${(item.overview || '').replace(/"/g, '&quot;')}" data-rating="${(item.vote_average || 0).toFixed(1)}">
+      <div class="trend-card" data-title="${title}" data-overview="${overview}" data-rating="${(item.vote_average || 0).toFixed(1)}">
         ${poster
           ? `<img src="${poster}" alt="${title} poster" loading="lazy" onerror="this.parentElement.querySelector('.poster-fallback')?.removeAttribute('hidden'); this.remove();">`
           : ""}
