@@ -566,4 +566,30 @@ td.rating{ font-family:var(--mono); color:var(--text-dim); }
   thead th, tbody td{ padding:10px 8px; }
   .modal-card{ padding:22px; }
   .auth-gate-card{ padding:28px 22px; }
+
+  /* Responsive table -> stacked cards on small screens */
+  .table-wrap{ overflow:visible; }
+  table, thead, tbody, tr, td{ display:block; width:100%; }
+  thead{ display:none; }
+  tr{
+    border:1px solid var(--line);
+    border-radius:var(--radius-card);
+    margin-bottom:14px;
+    padding:14px 16px 6px;
+    position:relative;
+  }
+  tr:last-child{ margin-bottom:0; }
+  td{ border:none; padding:6px 0; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+  td[data-label]:not([data-label=""])::before{
+    content:attr(data-label);
+    font-family:var(--mono);
+    font-size:10.5px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    color:var(--text-mute);
+  }
+  td[data-label=""]{ position:absolute; top:12px; right:14px; padding:0; }
+  td[data-label="#"]{ display:none; }
+  td.name{ font-size:16px; padding-top:0; }
+  td.name a{ margin-left:auto; }
 }

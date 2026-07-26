@@ -192,13 +192,13 @@ function renderTable() {
 
   body.innerHTML = filtered.map((r, i) => `
     <tr data-name="${r.name}">
-      <td><button class="fav-star ${favs.includes(r.name) ? "is-fav" : ""}" data-fav="${r.name}" aria-label="Toggle favorite">${favs.includes(r.name) ? "★" : "☆"}</button></td>
-      <td>${i + 1}</td>
-      <td class="name"><a href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a></td>
-      <td><span class="type-pill">${r.type}</span></td>
-      <td>${r.bestFor}</td>
-      <td class="rating">${r.rating.toFixed(1)}</td>
-      <td>${r.revenue}</td>
+      <td data-label=""><button class="fav-star ${favs.includes(r.name) ? "is-fav" : ""}" data-fav="${r.name}" aria-label="Toggle favorite">${favs.includes(r.name) ? "★" : "☆"}</button></td>
+      <td data-label="#">${i + 1}</td>
+      <td class="name" data-label="Name"><a href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a></td>
+      <td data-label="Type"><span class="type-pill">${r.type}</span></td>
+      <td data-label="Best for">${r.bestFor}</td>
+      <td class="rating" data-label="Rating">${r.rating.toFixed(1)}</td>
+      <td data-label="Revenue">${r.revenue}</td>
     </tr>`).join("");
 
   body.querySelectorAll("tr").forEach(tr => {
